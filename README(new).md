@@ -14,7 +14,7 @@ Facilitate the learning and find the mistakes for your own framework.
 
 ## use story
 
-- Type of users: Admin,   devloper, NormalUser
+- Type of users: Admin,   devloper, Expert.
 
 # Admin 
 
@@ -28,9 +28,10 @@ Facilitate the learning and find the mistakes for your own framework.
 - Search for Errors.
 - create and retrieve errors
 
-# NormalUser
+# Expert
 
- - Just Retrieve Errors
+ - Explain_Errors.
+ 
 
 
 <!-- Error
