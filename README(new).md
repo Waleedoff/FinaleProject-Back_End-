@@ -1,5 +1,5 @@
 ## Idea:
-This project will help  students or devlopers find the common mistakes in the mastering python or django framework.
+( PYTHON_ERROR ) This project will help  students or devlopers find the common mistakes in the mastering python or django framework.
 
 ## Inspiration:
 Facilitate the learning and find the mistakes for your own framework.
@@ -7,24 +7,26 @@ Facilitate the learning and find the mistakes for your own framework.
 ## List of Services / Features:
 - Manage the Users.
 - Manage the Error.
-- Manage easy learn !
+- easy to learn !
 
 
 
 
-## Type of users: Admin,   Errors,     devloper,
+## use story
 
-Admin 
+- Type of users: Admin,   devloper,
 
-Create, Read, Update, Delete Errors.
-Create, Read, Update, Delete devloper.
+# Admin 
+
+- Create, Read, Update, Delete Errors.
+- Create, Read, Update, Delete devloper.
 
 
-devloper
+#  devloper
 
-View Errors.
-Search for Errors.
-create and retrieve errors
+- View Errors.
+- Search for Errors.
+- create and retrieve errors
 
 
 <!-- Error
