@@ -1,10 +1,10 @@
 from rest_framework import  serializers
-from .models import ERROR
+from .models import ERRORModel
 from .models import Comment
 
 class ErrorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ERROR
+        model = ERRORModel
         fields = '__all__'
 
 
