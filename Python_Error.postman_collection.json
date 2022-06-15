@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "28499db7-7998-4043-934a-aa3fa1fe9d1f",
+		"name": "Python_Error",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21319850"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"username\": \"DEV\",\r\n \"email\" : \"dev@gmail.com\",\r\n \"password\": \"1234\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MTQ0OTg0LCJpYXQiOjE2NTUxNDQ2ODQsImp0aSI6IjAxNTI3MDU2MmY0NzQ3ZDFiMDk5OTQxNjAwNTUyODAxIiwidXNlcl9pZCI6Mn0.OCvAyu6nOefUawEBosVEOgbK_NM2lGO-PPI4G_SCB2Q",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MTUxMDAxLCJpYXQiOjE2NTUxNTA3MDEsImp0aSI6ImM1NjE4YzI4ZTIzMDQzYjZiMWMwNjdhZTdkN2FiMjliIiwidXNlcl9pZCI6MX0.AJlWCmZA32ODsXRSfFJZPPVh-Nqk3oIktjbwP7Q3X_I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"DEV\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Errors",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU3NzgxNDcxLCJpYXQiOjE2NTUxODk0NzEsImp0aSI6ImE1OGJjMmYyY2Y4NTQwMzliMjdlOTYwMDc5ZjU0ODU2IiwidXNlcl9pZCI6M30.48P20HAJqPswqTJfWSYgGGMoEefQSN35JejZCwXBN98",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU3Nzg4ODYwLCJpYXQiOjE2NTUxOTY4NjAsImp0aSI6IjFhM2FlZTA0YzlkNDQzNTk5MmQwN2JmM2ZkMmQ3ZDhlIiwidXNlcl9pZCI6M30.TOQLfj8miPYzMn3GHwfPLQ_zt3rGI0MHHfVBNzz6NEk",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU3ODgzMjg4LCJpYXQiOjE2NTUyOTEyODgsImp0aSI6ImIyNGMwN2MzMzIxODRhZTliZWZhOGQ4NDBmYWRmM2IwIiwidXNlcl9pZCI6Mn0.6CrrfmqEhyal-GE9-q8F8d8aHdII7hETpnpKm0Rhnu8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"error_desc\" : \"install django\",\r\n    \"error_sol\": \"python -m pip install django\",\r\n    \"error_ref\": \"stackoverflow.com/pip/installation\",\r\n    \"user\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show list of error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update error",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU3Nzg0MDYwLCJpYXQiOjE2NTUxOTIwNjAsImp0aSI6IjFmNTg5YzQwMDM2OTQ2NGFhYmYyMzIwM2Y1ZTNhYWQ3IiwidXNlcl9pZCI6M30.NuWHJAUCWD3jjjOAWpqkoFIicBDiRp-C8Q7ymvmGDDo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Error",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU3ODY3MjczLCJpYXQiOjE2NTUyNzUyNzMsImp0aSI6Ijg0OWU2ZTE3OTVlMTQ3OWJhZWY2NjVjODAwNTg2M2M4IiwidXNlcl9pZCI6M30.3MaxQ97mJMjUNpLZTSv5TWtc_d-CGarR7ejIN7qd9e4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/delerror/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"delerror",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Add Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/addcomment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"addcomment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/deletecomment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"deletecomment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show all comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/error/showcom",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"error",
+								"showcom"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
