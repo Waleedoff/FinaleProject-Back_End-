@@ -1,8 +1,8 @@
 ## Idea:
-( PYTHON_ERROR ) This project will help  students or devlopers find the common mistakes in the mastering python or django framework.
+( End_trouble website ) This project will help  students or devlopers find the common mistakes in the mastering python or django framework.
 
 ## Inspiration:
-Facilitate the learning and find the mistakes for your own framework.
+help student to find the mistakes in own framework
 
 ## List of Services / Features:
 - Manage the Users.
