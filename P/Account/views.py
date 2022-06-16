@@ -14,6 +14,10 @@ from .serializer import UserRegisterSerializer
 
 @api_view(['POST'])
 def register(request: Request):
+    '''
+    this method to allow user  register on this website 
+    
+    '''
     user_serializer = UserRegisterSerializer(data=request.data) # take userRegisterSerializer and convert to json .
     if user_serializer.is_valid():
         new_user = User.objects.create_user(**user_serializer.data)
@@ -26,6 +30,10 @@ def register(request: Request):
 
 @api_view(['POST'])
 def login_user(request: Request):
+     '''
+    this method to allow user  Login on this website 
+    
+    '''
     if 'username' in request.data and 'password' in request.data:
         user = authenticate(request, username=request.data['username'], password=request.data['password'])
         if user is not None:
