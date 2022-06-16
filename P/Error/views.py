@@ -11,13 +11,6 @@ from .serializers import CommentSerializer
 from rest_framework.permissions import IsAuthenticated
 
 
-'''
-user 1 ==> ADMIN
-user 2 ==> DEV
-user 3 ==> EXPERT
-
-'''
-
 
 
 @api_view(['POST'])
@@ -49,10 +42,10 @@ def add_error(request : Request):
 
 
 
-# update error or handling something.
+
 @api_view(['PUT'])
-# @authentication_classes([JWTAuthentication])
-# @permission_classes([IsAuthenticated])
+ @authentication_classes([JWTAuthentication])
+ @permission_classes([IsAuthenticated])
   #
 def update_error(request : Request, error_id): #
 
@@ -107,6 +100,7 @@ def list_error(request: Request):
 
 @api_view(['DELETE'])
 @authentication_classes([JWTAuthentication])
+@permission_classes([IsAuthenticated])
 def delete_Error(request: Request, ERRORModel_id):
     '''
                this method will delete any error you want
@@ -119,32 +113,11 @@ def delete_Error(request: Request, ERRORModel_id):
     del_error.delete()
     return Response({"msg" : "Deleted Successfully"})
 
-# @api_view(['GET','PUT','DELETE'])
-# def error_details(request,id):
-#
-#     try:
-#        error = ERRORModel.objects.get(pk=id)
-#     except ERRORModel.DoesNotExist:
-#         return Response(status=status.HTTP_404_NOT_FOUND)
-#
-#     if request.method == 'GET':
-#        serializer = ErrorSerializer(error)
-#        return Response(serializer.data)
-#     elif request.method == 'PUT':
-#         serializer = ErrorSerializer(error, data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-#     elif request.method == 'DELETE':
-#             error.delete()
-#             return Response(status=status.HTTP_204_NO_CONTENT)
 
-
-#here we start with COMMENTS
 
 @api_view(['POST'])
 @authentication_classes([JWTAuthentication])
+@permission_classes([IsAuthenticated])
 
 
 def addComment(request):
@@ -204,21 +177,6 @@ def delete_comment(request: Request, Comment_id):
         print(new_error.errors)
         dataResponse = {"msg" : "couldn't create a Error"}
         return Response( dataResponse, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
